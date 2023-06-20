@@ -32,21 +32,26 @@
       flex-direction: column;
       @include adaptive-value("gap", 10, 8, 0);
 
-      .footer__title {
+      .footer__logoTitle {
         display: flex;
         align-items: center;
         gap: 5px;
 
         h2 {
           font-family: "Nunito", sans-serif;
+          font-style: normal;
           font-weight: 600;
           @include adaptive-value("font-size", 30, 15, 0);
           line-height: 130%;
         }
 
-        img {
-          @include adaptive-value("width", 30, 20, 0);
-          object-fit: contain;
+        .footer__logo {
+          @include adaptive-value("width", 30, 30, 0);
+
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
         }
       }
 
@@ -67,13 +72,18 @@
         .footer__title {
           font-weight: 500;
           @include adaptive-value("font-size", 18, 14, 0);
-          line-height: 300%;
+          line-height: 130%;
         }
+
         li {
           a {
             font-weight: 400;
             @include adaptive-value("font-size", 16, 12, 0);
             line-height: 200%;
+
+            &:hover{
+              filter: drop-shadow(8px 0px 5px $color_1);
+            }
           }
 
           .footer__social {
@@ -82,9 +92,7 @@
 
             li {
               a {
-                font-weight: 400;
-                @include adaptive-value("font-size", 28, 28, 0);
-                line-height: 200%;
+                @include adaptive-value("font-size", 30, 30, 0);
               }
             }
           }
@@ -102,14 +110,14 @@
           b {
             font-weight: 500;
             @include adaptive-value("font-size", 18, 14, 0);
-            line-height: 300%;
+            line-height: 130%;
           }
 
           a {
             display: block;
             font-weight: 400;
             @include adaptive-value("font-size", 16, 12, 0);
-            line-height: 200%;
+            line-height: 130%;
           }
         }
 
@@ -119,9 +127,7 @@
 
           li {
             a {
-              font-weight: 400;
               @include adaptive-value("font-size", 28, 28, 0);
-              line-height: 200%;
             }
           }
         }

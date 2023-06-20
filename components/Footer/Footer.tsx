@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 import s from "./Footer.module.scss";
+
+import Image from "next/image";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
@@ -10,8 +12,8 @@ const Footer: FC = () => {
     <footer className={s.footer}>
       <div className={s.footer__content}>
         <div className={s.footer__introduction}>
-          <div className={s.footer__title}>
-            <img src="/logo.svg" alt="logo footer" /> <h2>IT ACADEMY</h2>
+          <div className={s.footer__logoTitle}>
+            <div><Image src="/logo.svg" alt="logo footer" width={30} height={30}/></div> <h2>IT ACADEMY</h2>
           </div>
           <p className={s.footer__description}>
             Покори IT-вершины и стань творцом <br /> своей судьбы!

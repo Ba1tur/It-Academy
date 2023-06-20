@@ -1,0 +1,26 @@
+@import "../../styles/adaptive.scss";
+@import "../../styles/variables.scss";
+
+.hero {
+  @include centering();
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5%;
+
+  .hero__left {
+    h1 {
+      font-weight: 700;
+      @include adaptive-value("font-size", 64, 28, 0);
+      line-height: 130%;
+      margin: 0 0 5%;
+
+      span {
+        color: #4a76cc;
+      }
+    }
+  }
+
+  .hero__right {
+  }
+}
