@@ -1,18 +1,24 @@
 import React, { FC } from "react";
 import s from "./Footer.module.scss";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineLike } from "react-icons/ai";
 
 const Footer: FC = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footer__content}>
-        <div>
-          <h2>
-            <img src="/logo.svg" alt="logo footer" /> IT ACADEMY
-          </h2>
-          <p>Покори IT-вершины и стань творцом своей судьбы!</p>
+        <div className={s.footer__introduction}>
+          <div className={s.footer__title}>
+            <img src="/logo.svg" alt="logo footer" /> <h2>IT ACADEMY</h2>
+          </div>
+          <p className={s.footer__description}>
+            Покори IT-вершины и стань творцом <br /> своей судьбы!
+          </p>
         </div>
 
-        <nav>
+        <nav className={s.footer__nav}>
           <ul className={s.footer__list}>
             <li className={s.footer__title}>Pages</li>
             <li>
@@ -48,25 +54,65 @@ const Footer: FC = () => {
               <a href="#">it.academy@gmail.com</a>
             </li>
             <li>
-              <a href="#">@it,academy</a>
+              <a href="#">@it.academy</a>
             </li>
             <li>
-              <ul>
+              <ul className={s.footer__social}>
                 <li>
-                  <a href="#"></a>
+                  <a href="#">
+                    <AiOutlineInstagram />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"></a>
+                  <a href="#">
+                    <AiOutlinePhone />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"></a>
+                  <a href="#">
+                    <AiOutlineFacebook />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"></a>
+                  <a href="#">
+                    <AiOutlineLike />
+                  </a>
                 </li>
               </ul>
             </li>
           </ul>
+
+          <div className={s.footer__list_clone}>
+            <div className={s.footer__flex}>
+              <b>Contacts</b>
+              <div className={s.footer__email}>
+                <a href="#">it.academy@gmail.com</a>
+                <a href="#">@it.academy</a>
+              </div>
+            </div>
+            <ul className={s.footer__social}>
+              <li>
+                <a href="#">
+                  <AiOutlineInstagram />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlinePhone />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlineFacebook />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlineLike />
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
 
