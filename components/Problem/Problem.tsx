@@ -16,6 +16,7 @@ const Problem = () => {
                 </h2>
 
                 <ul className={p.problem__list}>
+
                     <li>
                         <span style={{background: " #4FD69C"}}>
                             <AiTwotoneLike/>

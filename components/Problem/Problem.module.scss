@@ -4,17 +4,21 @@
 
   &__text{
     position: absolute;
-    padding: 60px 50px;
-    background: #4A76CC;
-    border: 1px solid #4A76CC;
-    border-radius: 20px;
-    transform: rotate(-20.94deg);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: white;
-    top: 80px;
+    top: 140px;
     right: 115px;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Courier',sans-serif;
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+    color: #0A9928;
+    border: 0.5rem double #0A9928;
+    -webkit-mask-position: 13rem 6rem;
+    transform: rotate(-14deg) scale(1.4);
   }
 
   &__title{
@@ -103,14 +107,6 @@
     span{
       padding-right: 0;
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .problem__text{
-    padding: 50px 50px;
-    top: 70px;
-    right: 50px;
   }
 }
 
