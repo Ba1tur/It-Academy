@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./ConnectForm.module.scss";
-import CustomInput from "../Ui/CustomInput/CustomInput";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import CustomInput from "../UI/CustomInput/CustomInput";
 
 const ConnectForm: React.FC = () => {
   return (
