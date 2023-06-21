@@ -12,13 +12,11 @@ import SwiperCore, { Pagination, Autoplay } from "swiper";
 
 SwiperCore.use([Autoplay]);
 
-type PriceCardArr = {
-  postCardDate: PriceCardProps;
-};
+
 
 const PriceCard: React.FC<{ postCardDate: PriceCardProps[] }> = ({
   postCardDate,
-}: any) => {
+}) => {
   return (
     <>
       <Swiper

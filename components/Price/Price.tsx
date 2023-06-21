@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Price.module.scss";
 import PriceCard from "../PriceCard/PriceCard";
-import { postCardDate } from "../constants/PostCard";
+import { postCardDate } from "../../constants/PostCard";
 import { PriceCardProps } from "@/models/IPriceCard";
 import { motion } from "framer-motion";
 
