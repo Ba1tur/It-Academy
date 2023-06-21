@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import s from "./ConnectForm.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import CustomInput from "../UI/CustomInput/CustomInput";
 
 
-const ConnectForm: React.FC = () => {
+const ConnectForm: FC = () => {
   return (
     <section className="container">
       <div className={s.connect_form_section}>
