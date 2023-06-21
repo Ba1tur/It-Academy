@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Problem from "@/components/Problem/Problem";
 import Choose from "@/components/Choose/Choose";
 import Map from "@/components/Map/Map";
+import Partner from "@/components/Partner/Partner";
+import Quez from "@/components/Quez/Quez";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <Problem/>
         <Choose/>
         <Map/>
+        <Partner/>
+        <Quez/>
     </>
   )
 }
