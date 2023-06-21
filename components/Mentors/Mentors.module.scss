@@ -1,0 +1,33 @@
+.mentors_background {
+  max-width: 1440px;
+  width: 100%;
+  height: 685px;
+  margin: 200px auto;
+  background: linear-gradient(102.54deg, #90a6f5 -0.77%, #3654be 108.41%);
+  .mentors_section {
+    width: 100%;
+    height: 100%;
+    padding: 87px 0 0 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+    .mentors_section__line {
+      width: 400px;
+      height: 4px;
+      padding-bottom: 48px;
+    }
+    .mentors_section__slide {
+      max-width: 1020px;
+      width: 100%;
+      height: 500px;
+    }
+  }
+}

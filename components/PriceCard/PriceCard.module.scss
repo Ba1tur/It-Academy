@@ -1,0 +1,113 @@
+.price_card {
+  position: relative;
+  max-width: 351px;
+  width: 100%;
+  height: 452px;
+  background: #ffffff;
+  box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.01), 0px 5px 3px rgba(0, 0, 0, 0.05),
+    0px 2px 2px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.09),
+    0px 0px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  padding: 0 23px 0 40px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .price_card__top_img{
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: 19px;
+    height: 35px;
+    object-fit: cover;
+    z-index: 15;
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .price_card___block {
+    max-width: 288px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px 0 24px;
+    .price_card__block__header {
+      width: 100%;
+      height: 45px;
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+      text-align: end;
+      margin-bottom: 18px;
+      h2 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 128.1%;
+        white-space: nowrap;
+        color: #000000;
+        text-align: left;
+      }
+    }
+    .price_card__block__main {
+      width: 100%;
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-between;
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 128.1%;
+        color: #000000;
+      }
+    }
+    h5 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 28px;
+      line-height: 128.1%;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  button {
+    width: 100%;
+    height: 79px;
+    border: 1px solid #3980ff;
+    border-radius: 10px;
+    background: #ffffff;
+    margin-top: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 148.6%;
+    color: #4a76cc;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .price_card{
+    button{
+      transform: translateY(80px);
+    }
+  }
+  .price_card__block__header{
+    h2{
+      font-size: 20px !important;
+      white-space: normal !important;
+    }
+  }
+  .price_card___block{
+    h5{
+      font-size: 21px !important;
+    }
+  }
+}
