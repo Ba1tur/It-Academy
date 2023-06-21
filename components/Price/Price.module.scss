@@ -1,0 +1,44 @@
+.price_background {
+	width: 100%;
+	background: linear-gradient(102.54deg, #90a6f5 -0.77%, #3654be 108.41%);
+  .price_section {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 49px;
+      text-align: center;
+      padding-top: 52px;
+      padding-bottom: 70px;
+
+      color: #ffffff;
+    }
+    .price_section__block {
+      width: 100%;
+      height: 560px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .price_section{
+    h1{
+      padding-bottom: 18px !important;
+      font-size: 32px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .price_section{
+    padding: 0 3% 0 3% !important;
+    h1{
+      font-size: 28px !important;
+    }
+  }
+}
