@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import {Chango, Inter} from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Problem from "@/components/Problem/Problem";
 import Choose from "@/components/Choose/Choose";
-
-const inter = Inter({ subsets: ['latin'] })
+import Map from "@/components/Map/Map";
 
 export default function Home() {
   return (
@@ -18,6 +14,7 @@ export default function Home() {
           </Head>
         <Problem/>
         <Choose/>
+        <Map/>
     </>
   )
 }

@@ -1,13 +1,15 @@
 import s from './Choose.module.scss'
 
+
 const Choose = () => {
+
     return (
         <section className={s.choose}>
             <div className="container">
                 <h2 className={s.choose__title}>
-                    А КАКОЙ <span>ЯЗЫК ПРОГРАММИРОВАНИЯ</span> <br/> ВЫБЕРЕШЬ <span>ТЫ</span>?
+                    А КАКОЙ <span>ЯЗЫК ПРОГРАММИРОВАНИЯ</span> <br/>
+                    ВЫБЕРЕШЬ <span>ТЫ</span>?
                 </h2>
-
 
                 <div className={s.choose__content}>
 
@@ -110,6 +112,7 @@ const Choose = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     );
