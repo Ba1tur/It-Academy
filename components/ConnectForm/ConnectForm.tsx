@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import CustomInput from "../UI/CustomInput/CustomInput";
 
+
 const ConnectForm: React.FC = () => {
   return (
     <section className="container">
