@@ -1,5 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
+import Problem from "@/components/Problem/Problem";
+import Choose from "@/components/Choose/Choose";
+import Map from "@/components/Map/Map";
+import Partner from "@/components/Partner/Partner";
+import Quez from "@/components/Quez/Quez";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Statistics from "@/components/Statistics/Statistics";
@@ -20,8 +24,13 @@ export default function Home() {
       </Head>
       <Hero />
       <Statistics />
+      <Problem />
       <ConnectForm />
+      <Choose />
       <Price />
+      <Map />
+      <Partner />
+      <Quez />
     </>
   );
 }
