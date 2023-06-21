@@ -2,6 +2,7 @@ import React from "react";
 import s from "./ConnectForm.module.scss";
 import CustomInput from "../Ui/CustomInput/CustomInput";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ConnectForm: React.FC = () => {
   return (
@@ -22,16 +23,25 @@ const ConnectForm: React.FC = () => {
           height={145}
         />
         <div className={s.connect_form_section__title_block}>
-          <h1>Воплоти в жизнь мечты, с помощью кода</h1>
-          <Image
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          >
+            Воплоти в жизнь мечты, с помощью кода
+          </motion.h1>
+          <motion.img
+            initial={{ opacity: 0, x: -120 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 1.2 } }}
             className={s.connect_form_section_decstop_arrow}
             src="/Arrow 1.svg"
             alt="arrow.svg"
-            width={223}
-            height={32}
           />
         </div>
-        <div className={s.connect_form_section_form}>
+        <motion.form
+          initial={{ opacity: 0, y: -130 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1.3 } }}
+          className={s.connect_form_section_form}
+        >
           <CustomInput placeholder="Your name" />
           <CustomInput placeholder="Phone number" />
           <CustomInput placeholder="Email" />
@@ -43,7 +53,7 @@ const ConnectForm: React.FC = () => {
             height={107}
           />
           <button>Contact Us</button>
-        </div>
+        </motion.form>
       </div>
     </section>
   );

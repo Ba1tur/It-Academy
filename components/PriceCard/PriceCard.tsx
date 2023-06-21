@@ -66,6 +66,20 @@ const PriceCard: React.FC<{ postCardDate: PriceCardProps[] }> = ({
                 }}
                 className={s.price_card}
               >
+                <motion.div
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: { duration: 1.3 },
+                  }}
+                  variants={{
+                    visible: {y: 0 , opacity: 1 }
+                  }}
+                  className={s.price_card__top_img}
+                >
+                  <img src="/top_item.svg" alt="s" />
+                </motion.div>
                 <div className={s.price_card___block}>
                   <div className={s.price_card__block__header}>
                     <img src={card.img} alt="mobile.svg" />
