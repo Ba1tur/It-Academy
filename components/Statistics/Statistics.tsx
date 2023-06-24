@@ -1,4 +1,4 @@
-import React, { ComponentType, FC, useEffect, useRef, useState } from "react";
+import React, {  FC, useEffect, useRef, useState } from "react";
 import s from "./Statistics.module.scss";
 
 const Statistics: FC = () => {
