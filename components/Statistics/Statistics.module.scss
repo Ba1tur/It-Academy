@@ -1,0 +1,124 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.statistics_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6%;
+  .statistics_block {
+    max-width: 1194px;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .statistics__number__block{
+      display: flex;
+      justify-content: center;
+      height: 80px;
+    }
+    .num  {
+      animation-fill-mode: forwards;
+      counter-reset: num var(--num);
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 59px;
+      line-height: 71px;
+      color: #4a76cc;
+      text-align: center;
+    }
+    h3{
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 59px;
+      line-height: 71px;
+      color: #4a76cc;
+      text-align: center;
+    }
+    .num1 {
+      animation: counter-to-30 3s alternate ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    .num2 {
+      animation: counter-to-120 3s alternate ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    .num3 {
+      animation: counter-to-97 3s alternate ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    .num::after {
+      content: counter(num);
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #4a76cc;
+      text-align: center;
+    }
+  }
+}
+
+
+@keyframes counter-to-30 {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: 6;
+  }
+}
+
+@keyframes counter-to-120 {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: 5000;
+  }
+}
+
+@keyframes counter-to-97 {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: 98;
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .statistics_block {
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .statistics__number__block{
+    h3{
+      font-size: 53px !important;
+    }
+  }
+  .statistics__number{
+    p{
+      font-size: 21px !important;
+    }
+  }
+}

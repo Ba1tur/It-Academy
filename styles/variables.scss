@@ -1,0 +1,15 @@
+$color_1: #ffffff;
+$color_2: linear-gradient(
+  180deg,
+  #000000 0%,
+  #000000 0.01%,
+  #000000 52.65%,
+  #000000 100%
+);
+
+@mixin centering {
+  max-width: 1440px;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
