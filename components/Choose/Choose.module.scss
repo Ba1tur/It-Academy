@@ -50,6 +50,7 @@
       background-color: #fff;
       transition: .5s;
 
+
       &:hover .choose__content_card_title{
         flex-direction: row;
         transition: .5s;
@@ -83,7 +84,7 @@
         height: 0;
         font-weight: 700;
         font-size: 15px;
-        line-height: 205.1%;
+        line-height: 180.1%;
         margin: 32px 0 39px;
         position: absolute;
       }

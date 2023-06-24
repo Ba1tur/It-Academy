@@ -1,18 +1,47 @@
 import s from './Choose.module.scss'
+import {motion} from "framer-motion";
+
+const topAnimation: any = {
+    hidden: {
+        y: -100,
+        opacity: 0,
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: {duration: 1, delay: custom * 0.4}
+    })
+}
+
+const hiddenAnimation: any = {
+    hidden: {
+        scale: 0,
+    },
+    visible: custom => ({
+        scale: 1.0,
+        transition: {duration: 0.05, delay: custom * 0.4}
+    })
+}
 
 const Choose = () => {
 
     return (
-        <section className={s.choose}>
+        <motion.section
+            initial="hidden"
+            whileInView="visible"
+            className={s.choose}>
+
             <div className="container">
-                <h2 className={s.choose__title}>
+                <motion.h2 custom={1} variants={topAnimation} className={s.choose__title}>
                     А КАКОЙ <span>ЯЗЫК ПРОГРАММИРОВАНИЯ</span> <br/>
                     ВЫБЕРЕШЬ <span>ТЫ</span>?
-                </h2>
+                </motion.h2>
 
                 <div className={s.choose__content}>
 
-                    <div className={s.choose__content_card}>
+                    <motion.div
+                        custom={2} variants={hiddenAnimation}
+                        className={s.choose__content_card}>
 
                         <h2 className={s.choose__content_card_title}>
                             <span>
@@ -39,9 +68,11 @@ const Choose = () => {
                                 Android
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className={s.choose__content_card}>
+                    <motion.div
+                        custom={3} variants={hiddenAnimation}
+                        className={s.choose__content_card}>
 
                         <h2 className={s.choose__content_card_title}>
                             <span>
@@ -70,9 +101,11 @@ const Choose = () => {
                                 Backend
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className={s.choose__content_card}>
+                    <motion.div
+                        custom={4} variants={hiddenAnimation}
+                        className={s.choose__content_card}>
 
                         <h2 className={s.choose__content_card_title}>
                             <span>
@@ -102,18 +135,14 @@ const Choose = () => {
 
                         <div className={s.choose__content_card_box}>
                             <button className={s.choose__content_card_btn}>
-                                iOS
-                            </button>
-
-                            <button className={s.choose__content_card_btn}>
-                                Android
+                                Дизайн
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
-        </section>
+        </motion.section>
     );
 };
 
