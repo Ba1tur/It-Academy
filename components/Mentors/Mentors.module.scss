@@ -1,13 +1,15 @@
 .mentors_background {
+  position: relative;
   max-width: 1440px;
   width: 100%;
   height: 685px;
   margin: 200px auto;
+  z-index: 1;
   background: linear-gradient(102.54deg, #90a6f5 -0.77%, #3654be 108.41%);
   .mentors_section {
     width: 100%;
     height: 100%;
-    padding: 87px 0 0 47px;
+    padding: 87px 0 47px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,16 +20,58 @@
       font-size: 60px;
       line-height: 24px;
       color: #ffffff;
+      text-align: center;
+      padding-bottom: 44px;
     }
     .mentors_section__line {
-      width: 400px;
-      height: 4px;
-      padding-bottom: 48px;
+      max-width: 410px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 48px;
     }
     .mentors_section__slide {
-      max-width: 1020px;
+      max-width: 1024px;
       width: 100%;
       height: 500px;
     }
   }
+  .first_ballon {
+    position: absolute;
+    top: 281px;
+    left: 42px;
+    z-index: -1;
+  }
+  .second_ballon {
+    position: absolute;
+    top: 532px;
+    left: 114px;
+    z-index: -1;
+  }
+  .third_ballon {
+    position: absolute;
+    top: 78px;
+    right: 222px;
+    z-index: -1;
+  }
+  .four_ballon {
+    position: absolute;
+    top: 495px;
+    right: 55px;
+    z-index: -1;
+  }
 }
+
+@media screen and (max-width: 477px) {
+  .mentors_section{
+    h1{
+      font-size: 40px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .mentors_section{
+    padding: 80px 3% 0 3% !important;
+  }
+}
+

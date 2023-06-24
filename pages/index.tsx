@@ -1,14 +1,17 @@
 import Head from "next/head";
-import Problem from "@/components/Problem/Problem";
-import Choose from "@/components/Choose/Choose";
-import Map from "@/components/Map/Map";
-import Partner from "@/components/Partner/Partner";
-import Quez from "@/components/Quez/Quez";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Statistics from "@/components/Statistics/Statistics";
 import ConnectForm from "@/components/ConnectForm/ConnectForm";
 import Price from "@/components/Price/Price";
+import Mentors from "@/components/Mentors/Mentors";
+import Reviews from "@/components/Reviews/Reviews";
+import Problem from "@/components/Problem/Problem";
+import Choose from "@/components/Choose/Choose";
+import Map from "@/components/Map/Map";
+import Partner from "@/components/Partner/Partner";
+import Quez from "@/components/Quez/Quez";
 import Hero from "@/components/Hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,8 +29,13 @@ export default function Home() {
       <Statistics />
       <Problem />
       <ConnectForm />
+      <Mentors />
       <Choose />
       <Price />
+      <Reviews />
+      
+
+      
       <Map />
       <Partner />
       <Quez />

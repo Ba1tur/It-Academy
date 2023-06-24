@@ -84,8 +84,8 @@ const PriceCard: React.FC<{ postCardDate: PriceCardProps[] }> = ({
                     <h2>{card.title}</h2>
                   </div>
                   {card.description.map((desc, index) => (
-                    <div className={s.price_card__block__main}>
-                      <p key={index}>{desc}</p>
+                    <div key={index} className={s.price_card__block__main}>
+                      <p>{desc}</p>
                       <Image
                         src="/check-mark.svg"
                         alt="check-mark.svg"
