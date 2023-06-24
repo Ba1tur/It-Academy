@@ -48,9 +48,11 @@
       position: relative;
       z-index: 3;
       background-color: #fff;
+      transition: .5s;
 
       &:hover .choose__content_card_title{
         flex-direction: row;
+        transition: .5s;
       }
 
       &:hover .choose__content_card_text{

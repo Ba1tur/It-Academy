@@ -1,6 +1,5 @@
 import s from './Choose.module.scss'
 
-
 const Choose = () => {
 
     return (
