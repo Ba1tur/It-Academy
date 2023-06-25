@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import s from "./ConnectForm.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import CustomInput from "../UI/CustomInput/CustomInput";
 
 
 const ConnectForm: FC = () => {
@@ -43,9 +42,9 @@ const ConnectForm: FC = () => {
           whileInView={{ opacity: 1, y: 0, transition: { duration: 1.3 } }}
           className={s.connect_form_section_form}
         >
-          <CustomInput placeholder="Your name" />
-          <CustomInput placeholder="Phone number" />
-          <CustomInput placeholder="Email" />
+          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Phone number" />
+          <input type="email" placeholder="Email" />
           <Image
             className={s.connect_form_section_form__mobile_arrow}
             src="/Arrow 2.svg"

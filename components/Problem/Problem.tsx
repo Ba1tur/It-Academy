@@ -3,10 +3,10 @@ import {AiTwotoneLike} from "react-icons/ai";
 import {IoIosNotifications} from "react-icons/io";
 import {MdPeopleAlt} from "react-icons/md";
 import {IoCall} from "react-icons/io5";
-import {motion} from "framer-motion";
+import {Variants, motion} from "framer-motion";
 import {useEffect, useState} from "react";
 
-const topAnimation: any = {
+const topAnimation: Variants = {
     hidden: {
         y: -100,
         opacity: 0,
@@ -18,7 +18,7 @@ const topAnimation: any = {
     })
 }
 
-const leftAnimation: any = {
+const leftAnimation: Variants = {
     hidden: {
         x: -100,
         opacity: 0,
