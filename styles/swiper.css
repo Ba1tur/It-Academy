@@ -9,7 +9,7 @@
     padding: 40px 0 !important;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -18,20 +18,20 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper-pagination-bullet{
+.mySwiper .swiper-pagination-bullet{
     background: #4A76CC !important;
     opacity:  initial !important;
     transition: .5s !important;
 }
 
-.swiper-pagination-bullet-active {
+ .mySwiper .swiper-pagination-bullet-active {
     transition: .5s !important;
     width: 40px !important;
     border-radius: 10px !important;
