@@ -1,27 +1,29 @@
 import s from './Choose.module.scss'
 import {motion} from "framer-motion";
-
-const topAnimation: any = {
+import { Variants } from "framer-motion";
+const topAnimation: Variants = {
     hidden: {
         y: -100,
         opacity: 0,
     },
-    visible: custom => ({
+    visible: (custom: number) => ({
         y: 0,
         opacity: 1,
-        transition: {duration: 1, delay: custom * 0.4}
+        transition: { duration: 1, delay: custom * 0.4 }
     })
-}
+};
 
-const hiddenAnimation: any = {
+
+const hiddenAnimation: Variants = {
     hidden: {
         scale: 0,
     },
-    visible: custom => ({
+    visible: (custom: number) => ({
         scale: 1.0,
-        transition: {duration: 0.05, delay: custom * 0.4}
+        transition: { duration: 0.05, delay: custom * 0.4 }
     })
-}
+};
+
 
 const Choose = () => {
 
